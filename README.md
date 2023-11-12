@@ -27,6 +27,5 @@ Once you are in that directory, you may create the skiplist in 1 of 2 ways:
    The script will automatically read the values from the text file and output a neat visualization of the skiplist to the terminal.
 ___
 
-### Remember, a skiplist node's height starts at 0, not 1. You may find the height of the output is 1 higher than you expected. 
-### This is because a node of height 0 only has a node on level 0 (the lowest level). It does not mean that the node does not exist. 
+### Remember, a skiplist node's height starts at 0, not 1. You may find the height of the output is 1 higher than you expected. This is because a node of height 0 only has a node on level 0 (the lowest level). It does not mean that the node does not exist. 
    

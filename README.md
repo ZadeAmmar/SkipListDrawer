@@ -1,5 +1,5 @@
 # SkipListPrinter
-A python script to visualize a skiplist based off of the value of the node and its height.
+A python script to visualize a skiplist based off of the value of the node and its height. This program currently only supports skiplists that implement the SSet interface (It automatically sorts the nodes so it will not work if you wish to draw an unsorted skiplist)
 
 ### Instructions for use:
 ___

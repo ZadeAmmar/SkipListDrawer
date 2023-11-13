@@ -1,3 +1,5 @@
+#Author: Zade Ammar
+
 def getChar(array, index):
     try:
         return array[index]
@@ -31,29 +33,40 @@ def printArr(array):
             
 
 def main():
+    print()
     nums = []
     temp = []
     count = 0
+    flag = False
 
     while(1):
-        x = input("\nEnter the node value (or enter quit to exit): ")
-        if x.lower() == "quit":
-            if count == 0:
-                return
+        flag = False
+        while(1):
+            x = input("Enter the node value (or enter quit to exit): ")
+            if x.lower() == "quit":
+                if count == 0:
+                    return
+                flag = True
+                break
+                
+            try:
+                x = int(x)
+                break
+            except:
+                print("Error. Please enter a number")
+                
+        if flag:
             break
-        try:
-            x = int(x)
-        except:
-            print("Error. Please enter a number: ")
-            continue
-        
-        y = input("Enter the node height: ")
-        try:
-            y = int(y)
-        except:
-            print("Error. Please enter a number: ")
-            continue
             
+        while(1):
+            y = input("Enter the node height: ")
+            try:
+                y = int(y)
+                break
+            except:
+                print("Error. Please enter a number")
+         
+        print()
         for i in range(y+1):
             temp.append(x)
         nums.append(temp)
